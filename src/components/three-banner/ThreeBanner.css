@@ -1,0 +1,13 @@
+@media all{
+	*{margin:0px;padding:0px;outline:none;}
+	img{max-width:100%;}
+	a,a:hover,a:focus{color:#333333;text-decoration:none;}
+	a:hover{color:#ec5198;}
+	::-webkit-scrollbar{width:6px;height:6px;}
+	::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}
+	::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:rgba(105,105,105,0.8);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+	.banner{margin-bottom:20px;}
+	@media ( min-width: 1200px ){
+	.container{width:1200px;}
+	}
+	}

@@ -1,0 +1,17 @@
+/**intro slide **/
+.intro {
+	background: #fff;
+	padding-top: 0px;
+}
+.msg-intro{
+	overflow: hidden;
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 2.2rem;
+	font-size: 22px;
+	font-family:Tinos,Arial,Helvetica,sans-serif;
+	font-style: italic;
+}
+a,a:hover,a:focus {color: #333333;text-decoration: none;}
+a:hover {	color: #ec5198;}

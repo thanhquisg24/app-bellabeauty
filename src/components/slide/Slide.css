@@ -1,0 +1,259 @@
+/*==========================================================================
+home-banner-slider
+==========================================================================*/
+#home-banner-slider  {
+
+   
+}
+#home-banner-slider a:focus, #home-banner-slider a:hover ,#home-banner-slider a,#home-banner-slider a:visited{
+    color: #333333;
+    text-decoration: underline;
+}
+#home-banner-slider  {
+	position: relative;
+	overflow: hidden;
+}
+#home-banner-slider .owl-carousel .owl-controls{
+	margin-bottom: 0;
+}
+
+#home-banner-slider .babyhouse-owl .owl-item img {
+	width: 100%;
+}
+#home-banner-slider .babyhouse-owl .item {
+	position: relative;
+}
+
+#home-banner-slider .owl-carousel .owl-nav {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-prev,
+#home-banner-slider .owl-carousel .owl-nav .owl-next {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 34px;
+	height: 54px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: rgba(68, 68, 68, 0.13);
+	padding: 0;
+	margin: -25px 0 0;
+	border-radius: 0;
+	outline: none;
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-prev:hover, 
+#home-banner-slider .owl-carousel .owl-nav .owl-next:hover {
+	background-color: rgba(68, 68, 68, 0.35);
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-prev .icon-wrap:before,
+#home-banner-slider .owl-carousel .owl-nav .owl-next .icon-wrap:before {
+	line-height: 54px;
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-prev {
+	left: 0;
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-next {
+	right: 0;
+	background-position: -34px 0;
+}
+#home-banner-slider .owl-carousel .owl-nav  .icon-wrap:before{
+	-webkit-font-smoothing: antialiased;
+	font-size: 28px;
+	line-height: inherit;
+	color: #ffffff;
+
+	font-family: 'FontAwesome';
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: normal;
+	overflow: hidden;
+	speak: none;
+	text-align: center;
+
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-prev .icon-wrap:before {
+	content: "\f104";
+
+}
+#home-banner-slider .owl-carousel .owl-nav .owl-next .icon-wrap:before{
+
+	content: "\f105";
+}
+
+#home-banner-slider .babyhouse-owl .text-desc  > a {
+	text-decoration: none;
+}
+
+
+#home-banner-slider .owl-carousel .owl-dots {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	padding: 3px 10px;
+	text-align: center;
+	background: white;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+#home-banner-slider .owl-carousel .owl-dots .owl-dot {
+	display: block;
+	float: left;
+	margin-right: 6px;
+}
+#home-banner-slider .owl-carousel .owl-dots .owl-dot:last-child {
+	margin-right: 0;
+}
+#home-banner-slider  .owl-dots .owl-dot.active {
+	background: #ec5198;
+}
+
+
+#home-banner-slider .owl-dots .owl-dot {
+	display: inline-block;
+	text-align: center;
+	background: #313c42;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+}
+#home-banner-slider .w-content {
+	position: absolute;
+	top: 25%;
+	right: 70px;
+	left: auto;
+	bottom: auto;
+	background: transparent;
+	width: 35%;;
+	padding-top: 0;
+}
+
+#home-banner-slider .meta {  
+	margin-right: 12px;
+	margin-top: 10px;
+	margin-left: 3px;
+	text-transform: uppercase;
+	font-size:11px;
+	line-height:13px;
+}
+#home-banner-slider  .heading {
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 40px;
+	margin-left: 0px;
+	margin-right: 0;
+	margin-bottom: 3px; 
+	font-family:Tinos,Arial,Helvetica,sans-serif;
+	text-transform: none;
+	margin-top: 0;
+}
+#home-banner-slider .babyhouse-owl p{  
+	line-height: 18px;
+	margin-bottom: 17px;}
+
+#home-banner-slider .ui-promo-slider .ui-promo-article.ui-hero .k-button.transparent {
+	letter-spacing: normal;
+	font-weight: normal;
+}
+#home-banner-slider .k-button {
+	letter-spacing: normal;
+	font-weight: normal;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+
+}
+#home-banner-slider .k-button:hover{
+	border-color:#ec5198;
+	color:#ec5198;
+
+}
+.blogh-slider img{width:auto;}
+@media only screen  and (max-width: 991px){
+	#home-banner-slider .w-content{width:50%;}
+	#home-banner-slider  .heading{font-size: 25px; line-height: 30px;}
+
+	#home-banner-slider .babyhouse-owl p{font-size:13px;}
+	#home-banner-slider .k-button{display:none;}
+}
+.banner-list a:hover {
+	color: #333333;
+}
+/***font  Slide***/
+.slide-1 a, .slide-1 h3,.banner-list .slide-1 a:hover,.slide-1 .k-button.transparent{
+	color:#000000;
+}
+.slide-1 .k-button.transparent{
+	border-color:#000000;
+}
+
+.slide-2 a, .slide-2 h3,.banner-list .slide-2 a:hover,.slide-2 .k-button.transparent{
+	color:#000000
+}
+.slide-2 .k-button.transparent{
+	border-color:#000000;
+}
+
+.slide-3 a, .slide-3 h3,.banner-list .slide-3 a:hover,.slide-3 .k-button.transparent{
+	color:#000000
+}
+.slide-3 .k-button.transparent{
+	border-color:#000000;
+}
+
+
+.slide-4 a, .slide-4 h4,.banner-list .slide-4 a:hover,.slide-4 .k-button.transparent{
+	color:#000000
+}
+.slide-4 .k-button.transparent{
+	border-color:#000000;
+}
+
+.slide-5 a, .slide-5 h5,.banner-list .slide-5 a:hover,.slide-5 .k-button.transparent{
+	color:#000000
+}
+.slide-5 .k-button.transparent{
+	border-color:#000000;
+}
+.k-button.transparent {
+	background-color: transparent;
+	border-color: #ffffff;
+	color: #ffffff;
+	width: 50%;
+	height: 3.5rem;
+	font-size: 1.2rem;
+	letter-spacing: 0.3rem;
+	line-height: 3.4rem;
+	font-weight: bold;
+}
+.k-button {
+    color: #ffffff;
+    border: 1px solid #000000;
+    background: #000000;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    height: 4.5rem;
+    padding: 0 2.55rem;
+    line-height: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    max-width: 100%;
+}
