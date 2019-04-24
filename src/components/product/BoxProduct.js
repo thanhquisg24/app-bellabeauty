@@ -1,12 +1,32 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
+import ModalCart from '../cart/ModalCart/ModalCart'
 
-
-
-const BoxProduct = (props) => {
-    return (
+class BoxProduct extends React.Component{
+    constructor(props) {
+        super(props);
+        var dataBindToModalCart={'id':0,'quantity':0,'isShow':false}; 
+        this.state = {
+          'dataBindToModalCart':dataBindToModalCart
+        };
+        this.handleClick = this.handleClick.bind(this);
+        this.handleShowCart = this.handleShowCart.bind(this);
+    };
+    handleClick(id) {
+        console.log('Click happened '+id);
+      };
+    handleShowCart(id,quatity) {
+        console.log(quatity+' Click happened show cart'+id);
+        var dataBindToModalCart={'id':id,'quantity':quatity,'isShow':true}; 
+        this.setState({
+          'dataBindToModalCart':dataBindToModalCart
+        });
+      };
+    render() {
+        return (
         <React.Fragment>
-            {props.items.products.map(item => (
+          <ModalCart dataBindToModalCart = {this.state.dataBindToModalCart} ></ModalCart>
+            {this.props.items.products.map(item => (
                 <React.Fragment key={item.id}>
                   <div className="col-lg-20 col-md-3 col-sm-4 col-xs-6 product-item animated zoomIn">
         <div className="product-wrapper product-resize">
@@ -22,10 +42,10 @@ const BoxProduct = (props) => {
                 </div>
             
                 <div className="btn-cart-product">
-                  <a href="javascript:void(0);" onclick="add_item_show_modalCart(1006890619)"><i className="fa fa-shopping-cart" /></a>
+                  <a href="javascript:void(0);"  onClick={() => this.handleShowCart(item.id,1)} ><i className="fa fa-shopping-cart" /></a>
                 </div>
                 <div className="btn-quickview-product">
-                  <a href="javascript:void(0);" className="quickview" data-handle="/products/bo-duong-cung-mong-joycos-keratin-nail"><i className="fa fa-search" /></a>
+                  <a  className="quickview"  onClick={() => this.handleClick(item.id)}><i className="fa fa-search" /></a>
                 </div>
               </div>
               <div className="product-info">
@@ -50,7 +70,6 @@ const BoxProduct = (props) => {
                 </React.Fragment>
             ))}
         </React.Fragment>
-    )
-};
-
+    )}
+}
 export default BoxProduct

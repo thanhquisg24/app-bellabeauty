@@ -16,6 +16,7 @@
     "postcss-cli": "^6.1.2",
     "postcss-combine-duplicated-selectors": "^7.0.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^0.32.0",
     "react-currency-format": "^1.0.0",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
