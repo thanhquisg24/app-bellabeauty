@@ -1,0 +1,6 @@
+export const actionTypes = {
+  ADD_CART: 'ADD_CART',
+  DELETE_CART:'DELETE_CART',
+  EDIT_CART:'EDIT_CART',
+    UPDATE_CART:'UPDATE_CART'
+  }

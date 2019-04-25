@@ -1,6 +1,8 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 import ModalCart from '../cart/ModalCart/ModalCart'
+import {connect} from 'react-redux';
+import {actionTypes} from '../../constants/actionTypes';
 
 class BoxProduct extends React.Component{
     constructor(props) {
@@ -18,14 +20,16 @@ class BoxProduct extends React.Component{
     handleShowCart(id,quatity) {
         console.log(quatity+' Click happened show cart'+id);
         var dataBindToModalCart={'id':id,'quantity':quatity,'isShow':true}; 
-        this.setState({
-          'dataBindToModalCart':dataBindToModalCart
-        });
+          this.props.dispatch({
+            type: actionTypes.ADD_CART,
+            dataBindToModalCart
+          });
+        
       };
     render() {
         return (
         <React.Fragment>
-          <ModalCart dataBindToModalCart = {this.state.dataBindToModalCart} ></ModalCart>
+     
             {this.props.items.products.map(item => (
                 <React.Fragment key={item.id}>
                   <div className="col-lg-20 col-md-3 col-sm-4 col-xs-6 product-item animated zoomIn">
@@ -72,4 +76,4 @@ class BoxProduct extends React.Component{
         </React.Fragment>
     )}
 }
-export default BoxProduct
+ export default  connect()(BoxProduct)

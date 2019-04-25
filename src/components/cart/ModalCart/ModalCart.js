@@ -1,6 +1,7 @@
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 import {Button,Modal} from 'react-bootstrap';
+import { connect } from 'react-redux';
 import './ModalCart.css'
 
 class ModalCart extends React.Component {
@@ -11,6 +12,8 @@ class ModalCart extends React.Component {
       this.state = { show: dataBindToModalCart.isShow }
     }
     componentWillReceiveProps(nextProps) { 
+      console.log("this.props");
+      console.log(this.props);
         if (this.props.show !== nextProps.dataBindToModalCart.isShow) { 
             this.setState({ show: nextProps.dataBindToModalCart.isShow });
           } 
@@ -123,4 +126,11 @@ class ModalCart extends React.Component {
     }
   }
   
-  export default ModalCart
+const mapStateToProps = (state) => {
+  console.log("state");
+  console.log(state);
+  return {
+    dataBindToModalCart: state
+  }
+}
+  export  default connect(mapStateToProps)(ModalCart)
